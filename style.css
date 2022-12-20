@@ -1,0 +1,53 @@
+body{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+img{
+    width:auto;
+    height: 150px;
+    bottom:0px;
+    position: absolute;
+}
+.from-left{
+    animation-name: moveCar1;
+    animation-duration: 5s;
+    animation-delay: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 1;
+    
+}
+@keyframes moveCar1 {
+    from  {left: 0%;}
+    to {left: 100%;}
+}
+.from-right{
+    right: 0px;
+    animation-name: moveCar2;
+    animation-duration: 5s;
+    animation-delay: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+  @keyframes moveCar2 {
+    from  {right: 0%;}
+    to {right: 100%;}
+}
+
+.sun{
+    top:0px;
+    height: 400px;
+    width: auto;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-delay: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate {
+    0%{ transform: rotate(0deg);left:0%; top:150px;}
+    50%{transform: rotate(180deg);left:50%; top:0px;}
+    100%{transform: rotate(360deg);left:100%; top:150px;}
+}
+
